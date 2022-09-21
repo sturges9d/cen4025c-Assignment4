@@ -9,25 +9,13 @@ public class TestClass {
 
     public static void main(String[] args) {
         // ArrayList
-        long startTime = System.nanoTime();
         fillAndDeleteArray();
-        long endTime = System.nanoTime();
-        long elapsedTime = endTime - startTime;
-        System.out.printf("ArrayList ET: %,d %n", elapsedTime);
 
         // LinkedList
-        startTime = System.nanoTime();
         fillAndDeleteLinkedList();
-        endTime = System.nanoTime();
-        elapsedTime = endTime - startTime;
-        System.out.printf("LinkedList ET: %,d %n", elapsedTime);
 
         // Hashtable
-        startTime = System.nanoTime();
         fillAndDeleteHashtable();
-        endTime = System.nanoTime();
-        elapsedTime = endTime - startTime;
-        System.out.printf("Hashtable ET:  %,d %n", elapsedTime);
     }
 
     private static void fillAndDeleteArray() {
